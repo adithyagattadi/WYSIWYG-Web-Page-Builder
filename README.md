@@ -67,3 +67,48 @@ The app will open in your browser at http://localhost:3000
 ### Preview Mode
 - Click "Toggle Preview" to see the final output
 - Click "Exit Preview" to continue editing
+
+## Component Structure 🏗️
+src/
+├── components/
+│   ├── Canvas/          # Main editing area
+│   ├── Toolbar/         # Component palette
+│   ├── PropertiesPanel/ # Right-side property editor
+│   └── elements/        # Individual components
+│       ├── TextElement/
+│       ├── ImageElement/
+│       ├── ButtonElement/
+│       └── VideoElement/
+├── context/             # State management
+└── styles/              # Global styles
+
+## Customization 🎨
+### Adding New Components
+- Create new folder in src/components/elements/
+- Add to Toolbar.jsx
+- Update EditorContext.js
+
+### Modifying Styles
+- Component-specific styles: Edit corresponding CSS files
+- Global styles: src/styles/
+
+## Troubleshooting 🛠️
+### Issue and	Solution
+Can't drag components	
+1. Ensure react-dnd is installed
+2. Restart development server
+   
+Properties panel not updating	
+1. Verify component is selected
+2. Check browser console for errors
+   
+Video not embedding	
+1. Use only YouTube/Vimeo URLs
+2. Ensure URL is in correct format
+   
+Styling issues	
+1. Clear browser cache
+2. Verify CSS file imports
+
+## License 📄
+This project is licensed under the MIT License - see the LICENSE file for details.
