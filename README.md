@@ -47,7 +47,7 @@ npm start
 
 The app will open in your browser at http://localhost:3000
 
-<h2>Usage<h2/>�️
+## Usage 🖱️
 ### Adding Components
 1. Drag elements from the left toolbar onto the canvas
 
