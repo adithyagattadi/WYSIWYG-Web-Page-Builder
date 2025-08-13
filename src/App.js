@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Canvas from './components/Canvas/Canvas';
+import PropertiesPanel from './components/PropertiesPanel/PropertiesPanel';
+import Toolbar from './components/Toolbar/Toolbar';
+import { EditorProvider } from './context/EditorContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EditorProvider>
+      <div className="app">
+        <div className="main-content">
+          <Toolbar />
+          <Canvas />
+          <PropertiesPanel />
+        </div>
+        <div className="status-bar">
+          <span>WYSIWYG Page Builder</span>
+          <span>Drag and drop to build your page</span>
+        </div>
+      </div>
+    </EditorProvider>
   );
 }
 
