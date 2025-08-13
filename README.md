@@ -1,6 +1,7 @@
 # WYSIWYG Page Builder
 
-![Builder Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+<img width="1470" height="797" alt="image" src="https://github.com/user-attachments/assets/63b94926-def3-48a7-9291-3d28f62121ad" />
+
 
 A drag-and-drop web page builder inspired by WordPress and Wix, allowing users to create layouts with text, images, buttons, and video components.
 
@@ -46,7 +47,7 @@ npm start
 
 The app will open in your browser at http://localhost:3000
 
-## Usage 🖱️
+<h2>Usage<h2/>�️
 ### Adding Components
 1. Drag elements from the left toolbar onto the canvas
 
