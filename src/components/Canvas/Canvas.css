@@ -1,0 +1,23 @@
+.canvas {
+  flex: 1;
+  min-height: 80vh;
+  padding: 20px;
+  position: relative;
+  transition: background-color 0.3s;
+  overflow-y: auto;
+}
+
+.canvas-component {
+  margin-bottom: 15px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.canvas-component.selected {
+  outline: 2px dashed #007bff;
+  outline-offset: 2px;
+}
+
+.canvas-component:hover:not(.selected) {
+  outline: 1px dashed #adb5bd;
+}

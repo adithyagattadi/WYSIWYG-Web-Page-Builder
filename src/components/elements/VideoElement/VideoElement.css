@@ -1,0 +1,125 @@
+.video-element {
+  margin: 15px 0;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.video-container iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
+.video-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.size-controls label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.size-controls input {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 80px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn,
+.submit-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.video-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.video-input-container input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px;
+}
+
+.submit-btn:hover {
+  background-color: #27ae60;
+}
+
+@media (max-width: 600px) {
+  .video-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .action-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    flex: 1;
+  }
+}

@@ -1,0 +1,25 @@
+.text-element {
+  min-height: 50px;
+  padding: 10px;
+  border: 1px dashed transparent;
+  transition: all 0.2s;
+  cursor: text;
+}
+
+.text-element:hover {
+  border-color: #ccc;
+}
+
+.text-element textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.text-element div {
+  min-height: 20px;
+}
