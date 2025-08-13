@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# WYSIWYG Page Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Builder Screenshot](screenshot.png) <!-- Add a screenshot if available -->
 
-## Available Scripts
+A drag-and-drop web page builder inspired by WordPress and Wix, allowing users to create layouts with text, images, buttons, and video components.
 
-In the project directory, you can run:
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Component Structure](#component-structure)
+- [Customization](#customization)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
 
-### `npm start`
+## Features ✨
+- **Drag-and-drop interface** for:
+  - Text boxes
+  - Images
+  - Buttons 
+  - Video embeds
+- **Real-time property editing** panel
+- **Preview mode** to view final output
+- **Responsive design** works on all devices
+- **Coming soon**: Export functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation 💻
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+- Node.js (v14+)
+- npm (v6+)
 
-### `npm test`
+### Setup
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/wysiwyg-page-builder.git
+cd wysiwyg-page-builder
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
 
-### `npm run build`
+3. Start development server:
+```bash
+npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app will open in your browser at http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage 🖱️
+### Adding Components
+1. Drag elements from the left toolbar onto the canvas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Supported components:
 
-### `npm run eject`
+Text
+Image (with upload capability)
+Button
+Video (YouTube/Vimeo)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Editing Properties
+1. Click any component to select it
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Adjust properties in the right panel:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Text: Font, size, color, alignment
+Images: Size, alt text
+Buttons: Text, colors, padding
+Videos: URL, dimensions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Preview Mode
+Click "Toggle Preview" to see the final output
 
-## Learn More
+Click "Exit Preview" to continue editing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Component Structure 🏗️
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+src/
+├── components/
+│   ├── Canvas/          # Main editing area
+│   ├── Toolbar/         # Component palette
+│   ├── PropertiesPanel/ # Right-side property editor
+│   └── elements/        # Individual components
+│       ├── TextElement/
+│       ├── ImageElement/
+│       ├── ButtonElement/
+│       └── VideoElement/
+├── context/             # State management
+└── styles/              # Global styles
 
-### Code Splitting
+## Customization 🎨
+### Adding New Components
+1. Create new folder in src/components/elements/
+2. Add to Toolbar.jsx
+3. Update EditorContext.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Modifying Styles
+Component-specific styles: Edit corresponding CSS files
+Global styles: src/styles/
 
-### Analyzing the Bundle Size
+## Troubleshooting 🛠️
+Issue	Solution
+Can't drag components	1. Ensure react-dnd is installed
+2. Restart development server
+Properties panel not updating	1. Verify component is selected
+2. Check browser console for errors
+Video not embedding	1. Use only YouTube/Vimeo URLs
+2. Ensure URL is in correct format
+Styling issues	1. Clear browser cache
+2. Verify CSS file imports
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License 📄
+This project is licensed under the MIT License - see the LICENSE file for details.
+# WYSIWYG-Web-Page-Builder
