@@ -35,3 +35,35 @@ A drag-and-drop web page builder inspired by WordPress and Wix, allowing users t
 ```bash
 git clone https://github.com/yourusername/wysiwyg-page-builder.git
 cd wysiwyg-page-builder
+```
+2. Install dependencies:
+```bash
+npm install
+```
+4. Start development server:
+```bash
+npm start
+```
+The app will open in your browser at http://localhost:3000
+
+## Usage 🖱️
+
+### Adding Components
+- Drag elements from the left toolbar onto the canvas
+- Supported components:
+  - Text
+  - Image (with upload capability)
+  - Button
+  - Video (YouTube/Vimeo)
+  
+### Editing Properties
+- Click any component to select it
+- Adjust properties in the right panel:
+  - Text: Font, size, color, alignment
+  - Images: Size, alt text
+  - Buttons: Text, colors, padding
+  - Videos: URL, dimensions
+ 
+### Preview Mode
+- Click "Toggle Preview" to see the final output
+- Click "Exit Preview" to continue editing
